@@ -28,36 +28,53 @@ body {
     position: relative;
     background-color: #ffffff;
     padding: 0px;
-    border-radius: 14px;
-    width: 98%;
-    height: 98%;
+    border-radius: 24px;
+    width: 99%;
+    height: 99%;
 }
 
 .header {
     height: 120px;
     background-color: #5288f4;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 40%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 38%);
     overflow: hidden;
 }
 
 .card {
     position: relative;
-    margin-top: -95px;
+    margin-top: -88px;
+    display: flex;
+    align-items: center;
 }
 
 .card h1 {
+    position: relative;
     color: #ffffff;
     font-size: 14px;
     font-weight: bold;
     display: flex;
     align-items: center;
     justify-content: center;
+    top: -72px;
+    left: 98px;
 }
 
 .card-icon {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 150px;
-    height: 90px;
+    width: 210px;
+    height: 130px;
+    margin-top: 8px;
+    margin-left: -25px;
 }
+
+.setting-item {
+    
+}
+
+/* 
+list-style: none; /* Removes bullets */
+    /* padding: 0;       Removes default left padding    margin: 0; */
+    
+    
