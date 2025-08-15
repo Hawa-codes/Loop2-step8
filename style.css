@@ -70,11 +70,88 @@ body {
 }
 
 .setting-item {
-    
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: center;
 }
 
-/* 
-list-style: none; /* Removes bullets */
-    /* padding: 0;       Removes default left padding    margin: 0; */
-    
-    
+ul {
+    margin-top: 16px;
+    padding: 12px;
+}
+
+li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+    gap: -5px;
+}
+
+.first {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-right: 60px;
+    gap: 6px;
+}
+
+.img-icon {
+    width: 16px;
+    height: 16px;
+    object-fit: contain; 
+    margin-right: 8px;
+    font-weight: bolder;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.text p {
+    font-size: 11px;
+    color: black;
+    font-weight: bold;
+}
+
+.text span {
+    font-size: 7px;
+    color: #bababb;
+    font-weight: bold;
+}
+
+.switch {
+    width: 34px;
+    height: 20px;
+    background-color: #e0e0e0; 
+    border: none;
+    border-radius: 20px; 
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.switch::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 15px;
+    height: 16px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.switch[aria-pressed="true"] {
+    background-color: #4a90e2; 
+}
+
+.switch[aria-pressed="true"]::before {
+    transform: translateX(16px); 
+}
