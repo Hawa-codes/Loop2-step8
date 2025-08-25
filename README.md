@@ -1,5 +1,5 @@
 # loop2step8
-*An implementation of Smartphone frame design with HTML/CSS*
+*An implementation of Map Directions Card with HTML/CSS*
 
 ## Getting Started
 Clone or download this repository and run with a local server of open index.html with your favorite browser
@@ -8,7 +8,7 @@ Clone or download this repository and run with a local server of open index.html
 - Your browser version must be recent for a better experience
 
 ## Features
-- Smartphone frame design
+- Map Directions Card
 
 ## Tech/framework used
 - HTML
